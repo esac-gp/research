@@ -6,6 +6,10 @@
     <title>Grupo de Pesquisa em Engenharia e Sistemas Aeroespaciais Computacionais</title>
     <!-- Ícones do FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Zero-MD: Renderizador de Markdown no Navegador -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+
     <style>
         /* --- VARIÁVEIS DE CORES & ESTILOS BASE --- */
         :root {
@@ -357,11 +361,22 @@
             font-weight: 600;
             margin-top: 1rem;
             transition: var(--transition);
+            cursor: pointer;
         }
 
         .external-link:hover {
             color: var(--accent-hover);
             text-decoration: underline;
+        }
+
+        /* Contêiner de visualização da Ata em Markdown */
+        #markdown-viewer-container {
+            display: none;
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
         }
 
         /* --- FOOTER --- */
@@ -605,7 +620,7 @@
         <h2 class="section-title">Projetos em Andamento</h2>
         <div class="list-item">
             <h4>Developing a Cds With Scrum in an Interdisciplinary Academic Project</h4>
-            <p>Acompanhamento de testes computacionais e relatórios técnicos aplicados a sistemas aerodinâmicos com a Casa dos Ventos.</p>
+            <p>texto do projeto 01</p>
         </div>
         <div class="list-item">
             <h4>Simulação de Qualificação e Desempenho de Voo</h4>
@@ -660,9 +675,14 @@
             <h3>Atas das Reuniões</h3>
             <p>Registros formais de decisões, prazos e plano de ação do grupo de pesquisa.</p>
             <div>
-                <a href="./meeting-minute-20260817.md" target="_blank" class="external-link">
+                <a href="javascript:void(0)" onclick="toggleMarkdown()" class="external-link">
                     <i class="fa-solid fa-file-contract"></i> Quarta reunião
                 </a>
+            </div>
+            
+            <!-- Renderizador dinâmico de Markdown -->
+            <div id="markdown-viewer-container">
+                <zero-md id="md-viewer" src="./meeting-minute-20260817.md"></zero-md>
             </div>
         </div>
     </section>
@@ -676,26 +696,32 @@
     <script>
         // Função para alternar abas na seção de Reuniões
         function openTab(tabId) {
-            // Esconde todo o conteúdo das abas
             const contents = document.querySelectorAll('.tab-content');
             contents.forEach(content => content.classList.remove('active'));
 
-            // Remove a classe active de todos os botões
             const buttons = document.querySelectorAll('.tab-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
 
-            // Exibe a aba atual e marca o botão correspondente como ativo
             const selectedTab = document.getElementById(tabId);
             if(selectedTab) {
                 selectedTab.classList.add('active');
             }
 
-            // Ativa o botão da aba se clicado via menu superior/dropdown
             buttons.forEach(btn => {
                 if(btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(tabId)) {
                     btn.classList.add('active');
                 }
             });
+        }
+
+        // Função para alternar a exibição da Ata formatada em Markdown
+        function toggleMarkdown() {
+            const container = document.getElementById('markdown-viewer-container');
+            if (container.style.display === 'block') {
+                container.style.display = 'none';
+            } else {
+                container.style.display = 'block';
+            }
         }
     </script>
 </body>
