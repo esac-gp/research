@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo de Pesquisa Aeroespacial & Computacional</title>
+    <title>Grupo de Pesquisa em Engenharia e Sistemas Aeroespaciais Computacionais</title>
     <!-- Ícones do FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -67,13 +67,14 @@
             display: flex;
             align-items: center;
             gap: 0.75rem;
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--primary-dark);
         }
 
         .logo i {
             color: var(--accent-blue);
+            font-size: 1.25rem;
         }
 
         .nav-menu {
@@ -169,7 +170,7 @@
         }
 
         .hero-text h1 {
-            font-size: 2.75rem;
+            font-size: 2.5rem;
             color: var(--primary-dark);
             line-height: 1.2;
             margin-bottom: 1rem;
@@ -202,7 +203,7 @@
             box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.2);
         }
 
-        /* --- CARDS DE MEMBROS (ESTILO COM MOLDURA E CIRCULO) --- */
+        /* --- CARDS DE MEMBROS (ESTILO COM MOLDURA E CÍRCULO) --- */
         .members-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -239,10 +240,6 @@
 
         .member-photo-wrapper.border-blue {
             border: 3px solid #2563eb;
-        }
-
-        .member-photo-wrapper.border-green {
-            border: 3px solid #16a34a;
         }
 
         .member-photo-wrapper.border-gray {
@@ -352,6 +349,21 @@
             display: block;
         }
 
+        .external-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-blue);
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: var(--transition);
+        }
+
+        .external-link:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
         /* --- FOOTER --- */
         footer {
             background-color: var(--primary-dark);
@@ -391,7 +403,7 @@
         <div class="nav-container">
             <a href="#home" class="logo">
                 <i class="fa-solid fa-shuttle-space"></i>
-                <span>LabAeroComp</span>
+                <span>Grupo de Pesquisa em Engenharia e Sistemas Aeroespaciais Computacionais</span>
             </a>
             <nav>
                 <ul class="nav-menu">
@@ -418,8 +430,8 @@
     <!-- 1. HOME -->
     <section id="home">
         <div class="hero-text">
-            <h1>Pesquisa Avançada em Engenharia Aeroespacial e Computação</h1>
-            <p>Desenvolvendo métodos numéricos, simulações de alto desempenho e tecnologias computacionais aplicadas ao setor aeroespacial.</p>
+            <h1>Grupo de Pesquisa em Engenharia de Sistemas Aeroespaciais e Computacionais</h1>
+            <p>Desenvolvendo pesquisa acadêmica, simulações e tecnologias computacionais aplicadas ao setor aeroespacial</p>
             <a href="#descricao" style="display: inline-block; background: var(--accent-blue); color: white; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600;">Conheça a Equipe</a>
         </div>
         <div class="hero-image">
@@ -433,11 +445,11 @@
     <section id="descricao">
         <h2 class="section-title">Sobre o Grupo de Pesquisa</h2>
         <p style="text-align: center; max-width: 800px; margin: 0 auto 2.5rem; color: var(--text-muted);">
-            Equipe composta por professores orientadores e 9 alunos pesquisadores dedicados às ciências aeroespaciais e computação de alto desempenho.
+            Equipe composta por professores a alunos de doutorado, mestrado e graduação do ITA - Instituto Tecnológico de Aeronáutica, nos programas de Pós-Graduação em Engenharia Eletrônica e Computação (PG/EEC) e de Ciências e Tecnologias Espaciais (PG/CTE),
         </p>
 
         <div class="members-grid">
-            <!-- Professores / Orientadores -->
+            <!-- 01) Prof. Cunha -->
             <div class="member-card">
                 <div class="member-photo-wrapper border-blue">
                     <img src="https://via.placeholder.com/150" alt="Prof. Dr. Adilson Marques da Cunha" class="member-photo">
@@ -447,25 +459,57 @@
                 <p class="member-department">PG-CTE-E / PG-EEC-I</p>
             </div>
 
-            <div class="member-card">
-                <div class="member-photo-wrapper border-green">
-                    <img src="https://via.placeholder.com/150" alt="Prof. Dr. Valdivino Alexandre de Santiago Júnior" class="member-photo">
-                </div>
-                <h3 class="member-name">Prof. Dr. Valdivino Alexandre de Santiago Júnior <i class="fa-solid fa-link" style="font-size: 0.75rem; color: #2563eb;"></i></h3>
-                <p class="member-institution">Instituto Nacional de Pesquisas Espaciais (INPE)</p>
-                <p class="member-department">LIAREA / COPDT</p>
-            </div>
-
-            <!-- 9 Alunos Pesquisadores -->
+            <!-- 02) Juliana -->
             <div class="member-card">
                 <div class="member-photo-wrapper border-gray">
-                    <img src="https://via.placeholder.com/150" alt="Lensfilippe" class="member-photo">
+                    <img src="https://via.placeholder.com/150" alt="Juliana" class="member-photo">
                 </div>
-                <h3 class="member-name">Lensfilippe</h3>
+                <h3 class="member-name">Juliana</h3>
                 <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
-                <p class="member-department">Doutorado - CT 300</p>
+                <p class="member-department">Pesquisadora</p>
             </div>
 
+            <!-- 03) Samara -->
+            <div class="member-card">
+                <div class="member-photo-wrapper border-gray">
+                    <img src="https://via.placeholder.com/150" alt="Samara" class="member-photo">
+                </div>
+                <h3 class="member-name">Samara</h3>
+                <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
+                <p class="member-department">Pesquisadora</p>
+            </div>
+
+            <!-- 04) Breslei -->
+            <div class="member-card">
+                <div class="member-photo-wrapper border-gray">
+                    <img src="https://via.placeholder.com/150" alt="Breslei" class="member-photo">
+                </div>
+                <h3 class="member-name">Breslei</h3>
+                <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
+                <p class="member-department">Pesquisador</p>
+            </div>
+
+            <!-- 05) Rodrigo -->
+            <div class="member-card">
+                <div class="member-photo-wrapper border-gray">
+                    <img src="https://via.placeholder.com/150" alt="Rodrigo" class="member-photo">
+                </div>
+                <h3 class="member-name">Rodrigo</h3>
+                <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
+                <p class="member-department">Pesquisador</p>
+            </div>
+
+            <!-- 06) Pizani -->
+            <div class="member-card">
+                <div class="member-photo-wrapper border-gray">
+                    <img src="https://via.placeholder.com/150" alt="Pizani" class="member-photo">
+                </div>
+                <h3 class="member-name">Pizani</h3>
+                <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
+                <p class="member-department">Qualificação de Doutorado</p>
+            </div>
+
+            <!-- 07) Strauss -->
             <div class="member-card">
                 <div class="member-photo-wrapper border-gray">
                     <img src="https://via.placeholder.com/150" alt="Strauss" class="member-photo">
@@ -475,67 +519,44 @@
                 <p class="member-department">Pesquisador / PG-EEC</p>
             </div>
 
+            <!-- 08) Luiz Felipe -->
             <div class="member-card">
                 <div class="member-photo-wrapper border-gray">
-                    <img src="https://via.placeholder.com/150" alt="Pisani" class="member-photo">
+                    <img src="https://via.placeholder.com/150" alt="Luiz Felipe" class="member-photo">
                 </div>
-                <h3 class="member-name">Pisani</h3>
+                <h3 class="member-name">Luiz Felipe</h3>
                 <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
-                <p class="member-department">Qualificação de Doutorado</p>
+                <p class="member-department">Doutorado - CT 300</p>
             </div>
 
+            <!-- 09) Victor -->
             <div class="member-card">
                 <div class="member-photo-wrapper border-gray">
-                    <img src="https://via.placeholder.com/150" alt="Felipe Diana" class="member-photo">
+                    <img src="https://via.placeholder.com/150" alt="Victor" class="member-photo">
                 </div>
-                <h3 class="member-name">Felipe Diana</h3>
-                <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
-                <p class="member-department">TG2 - Casa dos Ventos</p>
-            </div>
-
-            <div class="member-card">
-                <div class="member-photo-wrapper border-gray">
-                    <img src="https://via.placeholder.com/150" alt="Aluno 5" class="member-photo">
-                </div>
-                <h3 class="member-name">Nome do Aluno 5</h3>
-                <p class="member-institution">Instituto Nacional de Pesquisas Espaciais (INPE)</p>
-                <p class="member-department">Mestrado</p>
-            </div>
-
-            <div class="member-card">
-                <div class="member-photo-wrapper border-gray">
-                    <img src="https://via.placeholder.com/150" alt="Aluno 6" class="member-photo">
-                </div>
-                <h3 class="member-name">Nome do Aluno 6</h3>
-                <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
-                <p class="member-department">Iniciação Científica</p>
-            </div>
-
-            <div class="member-card">
-                <div class="member-photo-wrapper border-gray">
-                    <img src="https://via.placeholder.com/150" alt="Aluno 7" class="member-photo">
-                </div>
-                <h3 class="member-name">Nome do Aluno 7</h3>
+                <h3 class="member-name">Victor</h3>
                 <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
                 <p class="member-department">Pesquisador</p>
             </div>
 
+            <!-- 10) Wagner -->
             <div class="member-card">
                 <div class="member-photo-wrapper border-gray">
-                    <img src="https://via.placeholder.com/150" alt="Aluno 8" class="member-photo">
+                    <img src="https://via.placeholder.com/150" alt="Wagner" class="member-photo">
                 </div>
-                <h3 class="member-name">Nome do Aluno 8</h3>
-                <p class="member-institution">Instituto Nacional de Pesquisas Espaciais (INPE)</p>
-                <p class="member-department">Mestrado</p>
+                <h3 class="member-name">Wagner</h3>
+                <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
+                <p class="member-department">Pesquisador</p>
             </div>
 
+            <!-- 11) Felipe Viana -->
             <div class="member-card">
                 <div class="member-photo-wrapper border-gray">
-                    <img src="https://via.placeholder.com/150" alt="Aluno 9" class="member-photo">
+                    <img src="https://via.placeholder.com/150" alt="Felipe Viana" class="member-photo">
                 </div>
-                <h3 class="member-name">Nome do Aluno 9</h3>
+                <h3 class="member-name">Felipe Viana</h3>
                 <p class="member-institution">Instituto Tecnológico de Aeronáutica (ITA)</p>
-                <p class="member-department">Doutorado</p>
+                <p class="member-department">TG2 - Casa dos Ventos</p>
             </div>
         </div>
     </section>
@@ -567,10 +588,12 @@
         <h2 class="section-title">Tecnologias Utilizadas</h2>
         <div style="text-align: center; max-width: 800px; margin: 0 auto;">
             <span class="tech-badge">Python</span>
-            <span class="tech-badge">C++ / Fortran</span>
+            <span class="tech-badge">C/C++</span>
             <span class="tech-badge">CUDA / GPU</span>
-            <span class="tech-badge">OpenFOAM</span>
-            <span class="tech-badge">MPI / OpenMP</span>
+            <span class="tech-badge">Pyspark</span>
+            <span class="tech-badge">Llamaindex</span>
+            <span class="tech-badge">YOLO</span>
+            <span class="tech-badge">Roboflow</span>
             <span class="tech-badge">MATLAB / Simulink</span>
             <span class="tech-badge">TensorFlow / PyTorch</span>
             <span class="tech-badge">Git & GitHub</span>
@@ -581,7 +604,7 @@
     <section id="projetos">
         <h2 class="section-title">Projetos em Andamento</h2>
         <div class="list-item">
-            <h4>Análise Computacional aplicada à Energia Eólica (TG2)</h4>
+            <h4>Developing a Cds With Scrum in an Interdisciplinary Academic Project</h4>
             <p>Acompanhamento de testes computacionais e relatórios técnicos aplicados a sistemas aerodinâmicos com a Casa dos Ventos.</p>
         </div>
         <div class="list-item">
@@ -621,6 +644,11 @@
         <div id="gravacao" class="tab-content">
             <h3>Gravações das Reuniões</h3>
             <p>Acesse o repositório de gravações em vídeo das discussões de projetos e seminários internos do grupo.</p>
+            <div>
+                <a href="https://drive.google.com/file/d/1KK48eqnEFQkfKUQRPYcn5Drdsqrx2bVq/view?usp=drive_link" target="_blank" class="external-link">
+                    <i class="fa-solid fa-circle-play"></i> Gravação da Reunião (Google Drive)
+                </a>
+            </div>
         </div>
 
         <div id="transcricao" class="tab-content">
@@ -631,12 +659,17 @@
         <div id="ata" class="tab-content">
             <h3>Atas das Reuniões</h3>
             <p>Registros formais de decisões, prazos e plano de ação do grupo de pesquisa.</p>
+            <div>
+                <a href="./meeting%20minutes-20260817.md" target="_blank" class="external-link">
+                    <i class="fa-solid fa-file-contract"></i> Quarta reunião
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 LabAeroComp - Grupo de Pesquisa Aeroespacial e Computacional. Hospedado via GitHub Pages.</p>
+        <p>&copy; 2026 Grupo de Pesquisa em Engenharia e Sistemas Aeroespaciais Computacionais. Hospedado via GitHub Pages.</p>
     </footer>
 
     <!-- JAVASCRIPT VANILLA -->
